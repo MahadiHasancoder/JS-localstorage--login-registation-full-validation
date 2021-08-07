@@ -1,3 +1,9 @@
+
+let getLocaldata = JSON.parse(localStorage.getItem('userlogin'));
+if(getLocaldata.active === '1'){
+    location.href='home.html';
+}
+
 let Username = document.querySelector('.Username')
 let Full_Name = document.querySelector('.Full_Name')
 let Email = document.querySelector('.Email')
@@ -7,6 +13,7 @@ let submit = document.querySelector('.submit')
 if(!localStorage.getItem('user')){
     localStorage.setItem('user', JSON.stringify(new Array()));
 }
+
 
 submit.addEventListener('click', function(event){
     event.preventDefault()

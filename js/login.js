@@ -20,11 +20,13 @@ submit.addEventListener('click', function(event){
         return item.username === Username.value.trim() && item.Password === password.value.trim();
     })
 
-    if(filterData.length <= 0){
-        alert("Username and Password Wrong")
-    }else if(!Username.value.trim() || !password.value.trim()){
+    
+     if(!Username.value.trim() || !password.value.trim()){
         alert("Input box Empty!!!!!")
-        }else{
+    }else if(filterData.length <= 0){
+        alert("Username and Password Wrong")
+    }
+    else{
         if(filterData[0].username && filterData[0].Password){
 
         localStorage.setItem( 'userlogin' , JSON.stringify({
