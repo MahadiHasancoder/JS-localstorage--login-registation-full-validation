@@ -7,6 +7,6 @@
 
 javascript Full validation
 
-live: https://mahadihasancoder.github.io/JS-localstorage--login-registation-full-validation/
+ [live](https://mahadidev7.github.io/JS-localstorage--login-registation-full-validation/)
 
 thank you😎
